@@ -12,7 +12,7 @@ def parse_args():
     parser.add_argument('--step-size', type=int, required=True)
     return parser.parse_args()
 
-def embed(fname, window_size, step_size):
+def embed(fname, window_size):
     text = extract_text(fname)
     text = ' '.join(text.split())
     text_tokens = text.split()
@@ -64,8 +64,7 @@ if __name__ == '__main__':
 
     model, cross_encoder, embeddings, paragraphs = embed(
         args.fname,
-        args.window_size,
-        args.step_size
+        args.window_size
     )
 
     print(embeddings.shape)
