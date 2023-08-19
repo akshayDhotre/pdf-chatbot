@@ -1,4 +1,4 @@
-# pdf Chatbot
+# pdf Chatbot on Local Machine
 ## simple local pdf chatbot using below libraries
  - pdfminer
  - sentence transformer
